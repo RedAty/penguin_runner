@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1, minimal-ui">
+
+    <title>Penguin Runner</title>
+    <style>
+        body, canvas {
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #cc0000;
+            width:100%;
+            height:100vh;
+        }
+        html {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script src="js/game.js?v3"></script>
+<script>
+
+	const game = new PoingGame();
+
+	game.setCanvasBySelector("canvas");
+	game.restartGame();
+
+    const wrath = new NPC("penguin");
+    wrath.setCustomCuts(0,0, 144, 128);
+
+    let loadedSprite = false;
+	wrath.load().then(res=>{
+		if(!loadedSprite) {
+			loadedSprite = true;
+			game.playerSprite = wrath;
+        }
+    }).catch(e=>{
+    	console.log("error");
+    });
+	setTimeout(()=>{
+		if(!loadedSprite) {
+			loadedSprite = true;
+			game.playerSprite = wrath;
+		}
+    },3000);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.idea
+.git
+/img/penguin/Icons
+/img/penguin/*.png
+/img/penguin/*.svg
+/img/penguin/*.ai
+/img/penguin/*.txt
