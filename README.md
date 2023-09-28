@@ -13,6 +13,7 @@ The controls of the game are straightforward:
 - **Left Arrow Key**: Move left
 - **Right Arrow Key**: Move right
 - **Up Arrow Key**: Jump
+
 #Technologies Used
 - Typescript
 - Next.js
