@@ -1,9 +1,9 @@
 # Penguin Runner
-![Tux, the Linux mascot](preview.png)
+![Tux, the Linux mascot](./public/screenshot.jpg)
 
 
-Penguin Platform is a simple, yet addictive 2D platform game built with Vanilla JS and HTML5 canvas. You control a cute penguin to navigate through different levels, overcome obstacles, and reach the final destination.
-
+Penguin Platform is a simple, yet addictive 2D platform game. You control a cute penguin to navigate through different levels, overcome obstacles, and reach the final destination.
+The game engine build in [Typescript](https://www.typescriptlang.org/) using Canvas packed into a [Next.js](https://nextjs.org/) application.
 # Gameplay
 As a player, you control a little penguin to traverse through challenging platform levels filled with obstacles. The objective is simple - reach the endpoint of each level safely.
 
@@ -14,7 +14,9 @@ The controls of the game are straightforward:
 - **Right Arrow Key**: Move right
 - **Up Arrow Key**: Jump
 #Technologies Used
-- Vanilla JavaScript
+- Typescript
+- Next.js
+- Canvas
 - HTML5
 - CSS3
 # Setup and Installation
