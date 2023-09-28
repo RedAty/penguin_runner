@@ -14,7 +14,7 @@ The controls of the game are straightforward:
 - **Right Arrow Key**: Move right
 - **Up Arrow Key**: Jump
 
-#Technologies Used
+# Technologies Used
 - Typescript
 - Next.js
 - Canvas
